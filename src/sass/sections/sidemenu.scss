@@ -28,7 +28,7 @@
   }
 }
 
-// sidemenu layout and styling
+// left sidemenu layout and styling
 
 .sidemenu-left {
   position: absolute;
@@ -46,6 +46,7 @@
     padding: 0;
     margin-top: 10px;
     margin-bottom: 20px;
+    color: $navbar1;
   }
 }
 
@@ -72,6 +73,8 @@
 .list-card ul li a {
   text-decoration: none;
 }
+
+// Right sidemenu layout and styling
 
 .sidemenu-right {
   position: absolute;
