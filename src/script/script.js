@@ -1,0 +1,22 @@
+
+
+// left side menu toggle 
+
+var isLeftSideMenuOpen = false;
+document.querySelector(".left").addEventListener("click", function () {
+    if (isLeftSideMenuOpen == false) {
+        document.querySelector(".sidemenu-left").style.left = 0;
+        isLeftSideMenuOpen = true;
+
+        document.querySelector(".sidemenu-button-wrap").classList.add("btn-active")
+    }
+
+
+    else if (isLeftSideMenuOpen == true) {
+        document.querySelector(".sidemenu-left").style.left = -100 + "%";
+        isLeftSideMenuOpen = false
+
+        document.querySelector(".sidemenu-button-wrap").classList.remove("btn-active")
+
+    }
+})

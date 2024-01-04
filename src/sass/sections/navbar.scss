@@ -1,0 +1,103 @@
+// header layout
+
+.marathi {
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, $navbar1 20%, $navbar2);
+  height: 70px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// menu list layout
+
+.menu-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  color: #fff;
+  font-size: 18px;
+
+  cursor: pointer;
+  &-item {
+    position: relative;
+    padding: 10px 0;
+  }
+
+  &-item-link {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+// menu list hover and popping dropdown
+
+.menu-list-item:hover {
+  text-decoration: underline;
+  .menu-dropdown {
+    display: block;
+    top: 100%;
+    z-index: 1;
+    opacity: 1;
+  }
+}
+
+// menu dropdown styling and popping
+
+.menu-dropdown {
+  position: absolute;
+  background-color: $navbar2;
+  list-style: none;
+  padding: 0;
+  width: max-content;
+  z-index: -1;
+  opacity: 0;
+  top: 100%;
+
+  border: 1px solid $navbar1;
+
+  box-shadow: #000 1px 5px 10px;
+
+  transition: all 0.2s linear;
+
+  .sub-list-item {
+    margin-bottom: 5px;
+
+    .sub-list-item-link {
+      color: #fff;
+      padding: 0 10px;
+      text-decoration: none;
+    }
+  }
+}
+
+.sub-list-item:hover {
+  background-color: #fff;
+
+  .sub-list-item-link {
+    color: #000;
+  }
+}
+
+// popping
+
+// styling
+
+// media query to disable navbar on 992px
+
+@media (max-width: 992px) {
+  header {
+    background: linear-gradient(to left, $navbar2, $navbarMiddle, $navbar2);
+  }
+
+  .menu-list {
+    display: none;
+  }
+}

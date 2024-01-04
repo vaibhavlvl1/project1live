@@ -1,0 +1,116 @@
+// menu buttons left and right
+
+.sidemenu-button-wrap {
+  display: none;
+  border: #fff 2px solid;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+  i {
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+.sidemenu-button-wrap:hover {
+  background-color: #fff;
+  border: 2px #000 solid;
+  i {
+    color: #000;
+  }
+}
+
+.btn-active {
+  background-color: #fff;
+  border: 2px #000 solid;
+  i {
+    color: #000;
+  }
+}
+
+// sidemenu layout and styling
+
+.sidemenu-left {
+  position: absolute;
+  background-color: $sidemenuLeftBG;
+  height: 100vh;
+  width: 50%;
+  left: -100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 1px 5px 5px #000;
+  transition: all 0.3s ease-in-out;
+
+  .downloads {
+    margin: 10px 0 20px 20px;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.list-card {
+  margin: 15px 15px;
+  padding: 5px;
+
+  h6 {
+    background-color: $sidemenuTitle;
+    padding: 5px;
+  }
+}
+
+.list-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-card ul li {
+  border-bottom: #ccc solid 1px;
+}
+
+.list-card ul li a {
+  text-decoration: none;
+}
+
+.sidemenu-right {
+  position: absolute;
+}
+
+main {
+  position: relative;
+}
+
+// enabling disabling side menu on width
+
+@media (max-width: 992px) {
+  .sidemenu-button-wrap {
+    display: block;
+  }
+}
+
+// adustments according to screen width
+
+@media (max-width: 768px) {
+  .sidemenu-left {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidemenu-left {
+    width: 90%;
+  }
+  .list-card {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sidemenu-left {
+    width: 100%;
+  }
+  .list-card {
+    padding: 0px;
+  }
+}
