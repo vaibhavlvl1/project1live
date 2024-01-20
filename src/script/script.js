@@ -20,3 +20,24 @@ document.querySelector(".left").addEventListener("click", function () {
 
     }
 })
+
+
+
+
+// app download modal on startup
+
+const myModal = document.querySelector(".modal");
+
+function showModal() {
+    setTimeout(() => {
+        myModal.style.cssText = "z-index:99;opacity:1;";
+    }, 1000)
+
+}
+
+
+
+
+document.querySelector('.modal-close').addEventListener('click', () => {
+    myModal.style.cssText = "z-index:-50;opacity:0";
+})

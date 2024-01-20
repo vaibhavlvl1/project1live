@@ -1,0 +1,25 @@
+.modal {
+  opacity: 0;
+  z-index: -50;
+  transition: all 0.3s linear;
+  display: block !important;
+}
+
+#startupmodal {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("/src/img/freepik.com-modal.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 20px;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  transform: translateY(30%);
+}
+
+.modal-close {
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*# sourceMappingURL=modals.css.map */

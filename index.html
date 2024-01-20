@@ -22,10 +22,10 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
         <!-- bootstrap -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.css">
     </head>
 
-    <body>
+    <body onload="showModal()">
 
         <!-- navigation -->
 
@@ -136,7 +136,12 @@
 
         </header>
 
+        <!-- navigation end -->
+
         <main>
+
+            <!-- left and right side menus -->
+
             <div class="sidemenu-left">
                 <h4 class="downloads">DOWNLOADS</h4>
                 <div class="row list-cards g-0">
@@ -241,15 +246,49 @@
 
 
             </div>
-            <div class="sidemenu-right">
-
+            <div class="sidemenu-right" hidden>
+                <ul>
+                    <li>ABOUT US</li>
+                    <li>CONTACT</li>
+                    <li>YouTube</li>
+                    <li>DOWNLOAD APP</li>
+                </ul>
             </div>
+
+            <!-- end of left and right side menus -->
+
+            <!-- app landing modal  -->
+
+
+            <div class="modal">
+
+                <div class="modal-dialog">
+                    <div class="modal-content text-center text-sm-start" id="startupmodal">
+                        <h3 class="modal-heading">Best App To Study For Competitive Exams</h3>
+
+                        <i class="bi bi-x-circle-fill modal-close" data-bs-dismiss="modal"></i>
+
+                        <hr>
+                        <p class="modal-para lead">Download our app for exclusive app content, online Test series,
+                            Question papers, Job Notifications, Classes and Quizzes </p>
+                        <hr>
+                        <div class="download-icons text-center">
+                            <h3 class="mb-4">Try It Now </h3>
+                            <a
+                                href="https://play.google.com/store/apps/details?id=com.sri.competitive.forum&pcampaignid=web_share"><img
+                                    src="/src/img/Google_Play_Store_badge_EN.svg.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end of app landing modal -->
 
         </main>
 
 
         <!-- bootstrap  -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.js"></script>
         <!-- custom -->
         <script src="src/script/script.js"></script>
     </body>
