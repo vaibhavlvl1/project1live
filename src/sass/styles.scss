@@ -17,6 +17,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+main {
+  padding: 20px;
+}
+
 // colors
 
 $navbar1: #740705;
@@ -27,11 +31,16 @@ $sidemenuTitle: #d26e6c;
 
 // imports
 // navbar
-@import "sections/navbar.scss";
+@import "./sections/navbar.scss";
 
 // sidemenu
 @import "sections/sidemenu.scss";
 
 // modals
+@import "./sections/modals.scss";
 
-@import "sections/modals.scss";
+// footer
+@import "./sections/footer.scss";
+
+// latest
+@import "./sections/latest.scss";
