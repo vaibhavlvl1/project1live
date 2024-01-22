@@ -1,17 +1,87 @@
-/* Error: Undefined variable.
- *    ,
- * 13 |   border: 5px double $navbar2;
- *    |                      ^^^^^^^^
- *    '
- *   src\sass\sections\latest.scss 13:22  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 13 \2502    border: 5px double $navbar2;\d\a    \2502                       ^^^^^^^^\a    \2575 \a   src\\sass\\sections\\latest.scss 13:22  root stylesheet";
+.sec-heading {
+  background-color: #d26e6c;
+  padding: 5px;
+  display: inline-block;
+  text-decoration: underline;
+  font-size: 20px;
 }
+
+.latest-container {
+  position: relative;
+}
+
+.latest {
+  position: relative;
+  width: 75%;
+  height: 75vh;
+  border: 5px double #e4504d;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.slider {
+  width: 300%;
+  height: 100%;
+  display: flex;
+  transition: all 0.5s linear;
+}
+.slider .slide {
+  width: 100%;
+  height: 100%;
+}
+.slider .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.controls {
+  position: absolute;
+  font-size: 45px;
+  color: red;
+  cursor: pointer;
+}
+.controls:hover {
+  font-size: 48px;
+  box-shadow: 0px 0px 5px red;
+}
+
+.next {
+  top: 50%;
+  right: 5%;
+}
+
+.prev {
+  top: 50%;
+  left: 5%;
+}
+
+@media (max-width: 576px) {
+  .latest {
+    width: 80vw;
+    height: 70vh;
+  }
+  .next {
+    top: 50%;
+    right: -8%;
+  }
+  .prev {
+    top: 50%;
+    left: -8%;
+  }
+  .controls {
+    position: absolute;
+    font-size: 45px;
+    color: red;
+    cursor: pointer;
+  }
+  .controls:hover {
+    font-size: 45px;
+    box-shadow: none;
+  }
+}
+
+/*# sourceMappingURL=latest.css.map */

@@ -5,7 +5,7 @@
 var isLeftSideMenuOpen = false;
 document.querySelector(".left").addEventListener("click", function () {
     if (isLeftSideMenuOpen == false) {
-        document.querySelector(".sidemenu-left").style.left = 0;
+        document.querySelector(".sidemenu-left").style.cssText = 'left:0;z-index:99';
         isLeftSideMenuOpen = true;
 
         document.querySelector(".sidemenu-button-wrap").classList.add("btn-active")
@@ -13,7 +13,7 @@ document.querySelector(".left").addEventListener("click", function () {
 
 
     else if (isLeftSideMenuOpen == true) {
-        document.querySelector(".sidemenu-left").style.left = -100 + "%";
+        document.querySelector(".sidemenu-left").style.cssText = 'left:-100%;z-index:1;';
         isLeftSideMenuOpen = false
 
         document.querySelector(".sidemenu-button-wrap").classList.remove("btn-active")
