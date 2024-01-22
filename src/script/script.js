@@ -35,9 +35,63 @@ function showModal() {
 
 }
 
-
-
-
+// modal close
 document.querySelector('.modal-close').addEventListener('click', () => {
     myModal.style.cssText = "z-index:-50;opacity:0";
 })
+
+
+// manual slideshow code
+
+
+
+// get values
+let slideCarousal = document.querySelector('.slider');
+let slideNumber = document.querySelectorAll('.slide').length;
+let slideCarousalLength = slideNumber * 100;
+
+// set slider length
+slideCarousal.style.width = slideCarousalLength + '%';
+
+transformLength = 100 / slideNumber;
+
+
+// get curr position of slider from css
+
+var currPos = 0;
+
+document.querySelector('.next').addEventListener('click', function () {
+    slideCarousal.style.transform = `translateX(-${currPos + transformLength}%)`;
+    currPos += transformLength;
+
+    if (currPos >= 100) {
+        slideCarousal.style.transform = 'translateX(0%)';
+        currPos = 0;
+    };
+})
+
+document.querySelector('.prev').addEventListener('click', function () {
+    slideCarousal.style.transform = `translateX(-${currPos - transformLength}%)`;
+    currPos -= transformLength;
+
+    if (currPos <= 0) {
+        slideCarousal.style.transform = 'translateX(-0%)';
+        currPos = 0;
+    };
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

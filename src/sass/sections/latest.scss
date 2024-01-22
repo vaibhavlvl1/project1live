@@ -1,5 +1,9 @@
 @use "../components/section_headings.scss" as *;
 
+.latest-container {
+  position: relative;
+}
+
 // align the slide box
 
 .latest {
@@ -11,18 +15,21 @@
   right: 0;
   margin-right: auto;
   margin-left: auto;
-  overflow: hidden;
+  overflow: scroll;
 }
 
-// fixing the height of slide
+// // fixing the height of slide
 
 .slider {
   width: 300%;
   height: 100%;
   display: flex;
+  transition: all 0.5s linear;
+
   .slide {
-    width: 33.33%;
+    width: 100%;
     height: 100%;
+
     // border: 1px red solid;
 
     img {
@@ -33,9 +40,19 @@
   }
 }
 
-// controls
-
 .controls {
+  position: absolute;
+  font-size: 45px;
   color: red;
-  font-size: 20px;
+  cursor: pointer;
+}
+
+.next {
+  top: 50%;
+  right: 5%;
+}
+
+.prev {
+  top: 50%;
+  left: 5%;
 }
