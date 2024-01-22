@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -245,12 +249,12 @@ footer {
   position: relative;
   width: 75%;
   height: 75vh;
-  border: 1px solid #e4504d;
+  border: 5px double #e4504d;
   left: 0;
   right: 0;
   margin-right: auto;
   margin-left: auto;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .slider {
@@ -275,6 +279,10 @@ footer {
   color: red;
   cursor: pointer;
 }
+.controls:hover {
+  font-size: 48px;
+  box-shadow: 0px 0px 5px red;
+}
 
 .next {
   top: 50%;
@@ -284,6 +292,31 @@ footer {
 .prev {
   top: 50%;
   left: 5%;
+}
+
+@media (max-width: 576px) {
+  .latest {
+    width: 80vw;
+    height: 70vh;
+  }
+  .next {
+    top: 50%;
+    right: -8%;
+  }
+  .prev {
+    top: 50%;
+    left: -8%;
+  }
+  .controls {
+    position: absolute;
+    font-size: 45px;
+    color: red;
+    cursor: pointer;
+  }
+  .controls:hover {
+    font-size: 45px;
+    box-shadow: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
