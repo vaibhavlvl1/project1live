@@ -5,7 +5,7 @@
 var isLeftSideMenuOpen = false;
 document.querySelector(".left").addEventListener("click", function () {
     if (isLeftSideMenuOpen == false) {
-        document.querySelector(".sidemenu-left").style.cssText = 'left:0;z-index:99';
+        document.querySelector(".sidemenu-left").style.cssText = 'left:0;z-index:50';
         isLeftSideMenuOpen = true;
 
         document.querySelector(".sidemenu-button-wrap").classList.add("btn-active")
@@ -13,7 +13,7 @@ document.querySelector(".left").addEventListener("click", function () {
 
 
     else if (isLeftSideMenuOpen == true) {
-        document.querySelector(".sidemenu-left").style.cssText = 'left:-100%;z-index:1;';
+        document.querySelector(".sidemenu-left").style.cssText = 'left:-100%;z-index:-1;';
         isLeftSideMenuOpen = false
 
         document.querySelector(".sidemenu-button-wrap").classList.remove("btn-active")
@@ -82,7 +82,25 @@ document.querySelector('.prev').addEventListener('click', function () {
 
 
 
+// Question and answer button toggles display list
 
+let menu = document.querySelector('.menu-list').addEventListener('click', function (event) {
+    if (event.target.className == 'marathi') {
+        event.target.parentElement.parentElement.nextElementSibling.classList.toggle("display-toggle");
+    }
+
+})
+
+
+
+// questions and answers on side panel
+
+let menu2 = document.querySelector('.list-card').addEventListener('click', function (event) {
+    if (event.target.className == 'marathi') {
+        console.log(event.target.parentElement.parentElement.nextElementSibling);
+        event.target.parentElement.parentElement.nextElementSibling.classList.toggle("display-toggle");
+    }
+})
 
 
 

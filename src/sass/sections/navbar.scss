@@ -87,9 +87,22 @@ header {
   }
 }
 
-// popping
+.QA {
+  display: none;
+  padding-left: 35px;
+  margin: 5px;
+  &-link {
+    background-color: rgb(88, 88, 249);
+    padding: 5px;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
 
-// styling
+    &:hover {
+      background-color: blue;
+    }
+  }
+}
 
 // media query to disable navbar on 992px
 

@@ -84,6 +84,25 @@ main {
   position: relative;
 }
 
+.QAS {
+  display: none;
+  margin: 5px;
+  .QAS-link {
+    background-color: rgb(88, 88, 249);
+    padding: 5px;
+    // border-radius: 15px;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+
+    &:hover {
+      background-color: blue;
+    }
+  }
+}
+
 // enabling disabling side menu on width
 
 @media (max-width: 992px) {

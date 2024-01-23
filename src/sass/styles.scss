@@ -29,6 +29,10 @@ $navbarMiddle: #631715;
 $sidemenuLeftBG: #dae6e4;
 $sidemenuTitle: #d26e6c;
 
+.display-toggle {
+  display: block !important;
+}
+
 // imports
 // navbar
 @import "./sections/navbar.scss";
@@ -44,3 +48,6 @@ $sidemenuTitle: #d26e6c;
 
 // latest
 @import "./sections/latest.scss";
+
+// page end designs
+@import "./sections/pageend.scss";

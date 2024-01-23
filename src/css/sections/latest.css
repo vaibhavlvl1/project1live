@@ -12,9 +12,10 @@
 
 .latest {
   position: relative;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.9)), url("../img/vecteezy_answer-sheets-on-table_10217462.jpg") center no-repeat;
+  background-size: cover;
   width: 75%;
-  height: 75vh;
-  border: 5px double #e4504d;
+  height: 90vh;
   left: 0;
   right: 0;
   margin-right: auto;

@@ -1,6 +1,6 @@
 .modal {
-  opacity: 0;
-  z-index: -50;
+  opacity: 1;
+  z-index: 1001;
   transition: all 0.3s linear;
   display: block !important;
 }
