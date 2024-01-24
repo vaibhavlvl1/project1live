@@ -97,7 +97,6 @@ let menu = document.querySelector('.menu-list').addEventListener('click', functi
 
 let menu2 = document.querySelector('.list-card').addEventListener('click', function (event) {
     if (event.target.className == 'marathi') {
-        console.log(event.target.parentElement.parentElement.nextElementSibling);
         event.target.parentElement.parentElement.nextElementSibling.classList.toggle("display-toggle");
     }
 })

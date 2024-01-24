@@ -1,0 +1,13 @@
+.youtube-container {
+  background-color: #e4504d;
+  margin: 0 -20px;
+  height: auto;
+  padding-bottom: 35px;
+}
+.youtube-container iframe {
+  margin-top: 20px;
+  width: 80%;
+  aspect-ratio: 16/9;
+}
+
+/*# sourceMappingURL=youtube.css.map */
