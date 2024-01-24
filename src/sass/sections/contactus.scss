@@ -11,6 +11,17 @@
 .contact-element {
   font-size: 20px;
   margin-bottom: 10px;
+  background-color: #e4504d;
+  display: inline-block;
+  width: 450px;
+  padding: 5px 10px;
+  border: 2px solid gold;
+  border-radius: 25px;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
 
   & i {
     margin-right: 5px;
