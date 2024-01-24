@@ -379,4 +379,36 @@ footer {
   aspect-ratio: 16/9;
 }
 
+.map-generator {
+  max-width: 100%;
+  max-height: 100%;
+  background: none;
+}
+
+.address-box {
+  border-left: 1px #e4504d solid;
+}
+
+.contact-element {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.contact-element i {
+  margin-right: 5px;
+}
+
+.social-icons {
+  font-size: 45px;
+  margin-right: 10px;
+}
+.social-icons:hover {
+  scale: 1.05;
+}
+
+@media (max-width: 768px) {
+  .address-box {
+    border: none;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
