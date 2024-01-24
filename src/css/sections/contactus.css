@@ -24,6 +24,13 @@
   scale: 1.05;
 }
 
+.utility-mv-up {
+  transform: translateY(-12px);
+}
+.utility-mv-up:hover {
+  scale: 1.05;
+}
+
 @media (max-width: 768px) {
   .address-box {
     border: none;
