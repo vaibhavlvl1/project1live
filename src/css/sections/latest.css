@@ -67,11 +67,11 @@
   }
   .next {
     top: 50%;
-    right: -8%;
+    right: -5%;
   }
   .prev {
     top: 50%;
-    left: -8%;
+    left: -5%;
   }
   .controls {
     position: absolute;

@@ -13,7 +13,7 @@
   margin-bottom: 10px;
   background-color: #e4504d;
   display: inline-block;
-  width: 450px;
+  width: 50%;
   padding: 5px 10px;
   border: 2px solid gold;
   border-radius: 25px;
@@ -46,5 +46,21 @@
 @media (max-width: 768px) {
   .address-box {
     border: none;
+  }
+  .contact-element {
+    width: 100%;
+  }
+}
+
+@media (max-width: 465px) {
+  .contact-element {
+    & a {
+      display: block;
+    }
+
+    & span {
+      display: block;
+      word-wrap: break-word;
+    }
   }
 }
