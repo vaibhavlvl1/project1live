@@ -112,3 +112,10 @@ let menu2 = document.querySelector('.list-card').addEventListener('click', funct
 
 
 
+// date in footer
+
+let currDate = new Date();
+
+let currYear = currDate.getFullYear();
+
+document.getElementById('currYear').innerHTML = currYear;
