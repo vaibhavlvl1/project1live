@@ -17,6 +17,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 
 main {
@@ -33,6 +34,15 @@ $sidemenuTitle: #d26e6c;
 
 .display-toggle {
   display: block !important;
+}
+
+.gototop {
+  position: fixed;
+  font-size: 40px;
+  z-index: 101;
+  bottom: 2%;
+  right: 5%;
+  display: none;
 }
 
 // imports
@@ -63,3 +73,9 @@ $sidemenuTitle: #d26e6c;
 
 //contact us
 @import "./sections/contactus.scss";
+
+@media (max-width: 992px) {
+  .latest-container {
+    margin-top: 70px;
+  }
+}

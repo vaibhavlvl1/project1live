@@ -17,6 +17,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 
 main {
@@ -25,6 +26,15 @@ main {
 
 .display-toggle {
   display: block !important;
+}
+
+.gototop {
+  position: fixed;
+  font-size: 40px;
+  z-index: 101;
+  bottom: 2%;
+  right: 5%;
+  display: none;
 }
 
 /*!
@@ -11979,6 +11989,14 @@ header {
 @media (max-width: 992px) {
   header {
     background: #740705;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+  }
+  .main-icon {
+    margin-right: 50%;
+    transform: translateX(50%);
   }
   .menu-list {
     display: none;
@@ -11990,6 +12008,7 @@ header {
   border-radius: 5px;
   padding: 2px;
   cursor: pointer;
+  margin-right: auto;
 }
 .sidemenu-button-wrap i {
   color: #fff;
@@ -12013,7 +12032,8 @@ header {
 }
 
 .sidemenu-left {
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   background-color: #dae6e4;
   height: 100vh;
   width: 50%;
@@ -12332,6 +12352,11 @@ footer {
   .contact-element span {
     display: block;
     word-wrap: break-word;
+  }
+}
+@media (max-width: 992px) {
+  .latest-container {
+    margin-top: 70px;
   }
 }
 

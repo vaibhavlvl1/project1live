@@ -85,9 +85,19 @@ document.querySelector('.prev').addEventListener('click', function () {
 // Question and answer button toggles display list
 
 let menu = document.querySelector('.menu-list').addEventListener('click', function (event) {
+
     if (event.target.className == 'marathi') {
-        event.target.parentElement.parentElement.nextElementSibling.classList.toggle("display-toggle");
+        if (event.target.parentElement.parentElement.nextElementSibling) {
+            event.target.parentElement.parentElement.nextElementSibling.classList.toggle("display-toggle");
+        }
+
     }
+
+    if (event.target.className == 'sub-list-item-link') {
+        event.target.parentElement.nextElementSibling.classList.toggle("display-toggle");
+    }
+
+
 
 })
 
@@ -95,15 +105,29 @@ let menu = document.querySelector('.menu-list').addEventListener('click', functi
 
 // questions and answers on side panel
 
-let menu2 = document.querySelector('.list-card').addEventListener('click', function (event) {
+let menu2 = document.querySelector('.sidemenu-left').addEventListener('click', function (event) {
+    event.preventDefault();
     if (event.target.className == 'marathi') {
         event.target.parentElement.parentElement.nextElementSibling.classList.toggle("display-toggle");
+    }
+
+    if (event.target.tagName == 'A') {
+        if (event.target.parentElement.nextElementSibling) {
+            event.target.parentElement.nextElementSibling.classList.toggle('display-toggle');
+        }
     }
 })
 
 
 
-
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 1300) {
+        console.log(window.scrollY);
+        document.querySelector('.gototop').style.cssText = 'display:block;';
+    } else {
+        document.querySelector('.gototop').style.cssText = 'display:none;';
+    }
+})
 
 
 
