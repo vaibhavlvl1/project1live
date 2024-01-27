@@ -1,0 +1,58 @@
+.linkbar {
+  position: fixed;
+  right: -258px;
+  width: 300px;
+  height: 500px;
+  top: 20%;
+}
+.linkbar a {
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  border: 2px solid darkblue;
+  border-radius: 25px;
+  padding: 5px;
+  transition: all 0.3s linear;
+}
+.linkbar a:hover {
+  transform: translateX(-200px);
+}
+.linkbar a i {
+  font-size: 20px;
+  border: 1px solid goldenrod;
+  border-radius: 15px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.enquiry-toggle {
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  border: 2px solid darkblue;
+  border-radius: 25px;
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+  transition: all 0.3s linear;
+  background-color: transparent;
+}
+.enquiry-toggle:hover {
+  transform: translateX(-200px);
+}
+.enquiry-toggle i {
+  font-size: 20px;
+  border: 1px solid goldenrod;
+  border-radius: 15px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+@media (max-width: 576px) {
+  .linkbar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=rightsidelinks.css.map */

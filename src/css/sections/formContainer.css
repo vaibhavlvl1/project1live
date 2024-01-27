@@ -1,0 +1,23 @@
+.form-container {
+  padding: 20px;
+  position: fixed;
+  background-color: transparent;
+  backdrop-filter: blur(25px);
+  width: 50%;
+  z-index: 1001;
+  left: 225%;
+  bottom: 15%;
+  transition: all 0.5s ease-in-out;
+}
+.form-container i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 25px;
+  color: #000;
+}
+.form-container i:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=formContainer.css.map */

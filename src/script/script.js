@@ -143,3 +143,16 @@ let currDate = new Date();
 let currYear = currDate.getFullYear();
 
 document.getElementById('currYear').innerHTML = currYear;
+
+
+// contact form opening
+
+document.querySelector('.enquiry-toggle').addEventListener('click', () => {
+    document.querySelector('.form-container').style.left = '25%';
+})
+
+document.querySelector('.close-form').addEventListener('click', () => {
+    document.querySelector('.form-container').style.left = '225%';
+})
+
+
